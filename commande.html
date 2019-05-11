@@ -1,0 +1,42 @@
+<!DOCTYPE html> <html>
+    <head>
+        <title>M.A.C</title>
+        <link rel="shortcut icon" href="/static/image/big-heads-16-252883.png" type="image/x-icon" />
+        <link type="text/css" rel="stylesheet" href="/static/style_control.css"/>
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul id="nav">
+                    <li id="nav-home"><a class="active" href="/origin/index.html">Accueil</a></li>
+                    <li id="nav-supervision"><a class="nav" href="supervision.html">Supervision</a></li>
+                    <li id="nav-control"><a class="nav" href="commande.html">Contrôle</a></li>
+                    <li id="nav-about" style="float:right"><a class="nav-right"  href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <h3>Commande de la M.A.C</h3>
+	<form action="/led/on" method="post">
+                <button type="submit" class="button">ON/OFF</button>
+        </form>
+	<form action="/broy/on" method="post">
+		<button type="submit" class="button">Broyeur-Desactivé</button>
+	</form>
+	<form action="/force/on" method="post">
+                <button type="submit" class="button">Force du café</button>
+        </form>
+	<form action="/tasse/on" method="post">
+                <button type="submit" class="button">Nombre de Tasses</button>
+        </form> 
+        <p id="state">Status: NA</p>	
+	<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>-->
+        <script type="text/javascript" src="/static/script/script_etat.js"</script>
+       
+	<footer class="site-footer">
+            <p>Compagnons Du Devoir et de l'électricité</p>
+            <img src="/static/image/Blason.png" height="43" width="46" >
+        </footer>
+    </body>
+</html>
