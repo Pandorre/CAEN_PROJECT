@@ -1,8 +1,8 @@
 <!DOCTYPE html> <html>
     <head>
         <title>M.A.C</title>
-        <link rel="shortcut icon" href="/static/image/big-heads-16-252883.png" type="image/x-icon" />
-        <link type="text/css" rel="stylesheet" href="/static/style_control.css"/>
+        <link rel="shortcut icon" href="C:/Users/Kunta/Desktop/CAEN_PROJECT-master/static/image/coffee-maker.png" type="image/x-icon" />
+        <link type="text/css" rel="stylesheet" href="C:/Users/Kunta/Desktop/CAEN_PROJECT-master/static/style_control.css"/>
         <meta charset="utf-8"/>
     </head>
     <body>
@@ -10,7 +10,6 @@
             <nav>
                 <ul id="nav">
                     <li id="nav-home"><a class="active" href="/origin/index.html">Accueil</a></li>
-                    <li id="nav-supervision"><a class="nav" href="supervision.html">Supervision</a></li>
                     <li id="nav-control"><a class="nav" href="commande.html">Contrôle</a></li>
                     <li id="nav-about" style="float:right"><a class="nav-right"  href="about.html">About</a></li>
                 </ul>
@@ -18,25 +17,48 @@
         </header>
 
         <h3>Commande de la M.A.C</h3>
-	<form action="/led/on" method="post">
-                <button type="submit" class="button">ON/OFF</button>
-        </form>
-	<form action="/broy/on" method="post">
-		<button type="submit" class="button">Broyeur-Desactivé</button>
-	</form>
-	<form action="/force/on" method="post">
-                <button type="submit" class="button">Force du café</button>
-        </form>
-	<form action="/tasse/on" method="post">
-                <button type="submit" class="button">Nombre de Tasses</button>
-        </form> 
-        <p id="state">Status: NA</p>	
+            <li><a>
+                <form action="/led/on" method="post">
+                    <p>Lancer le café</p>
+                    <div id="marche"><input type="image" src="C:/Users/Kunta/Desktop/CAEN_PROJECT-master/static/image/coffee-machine.png" alt="Submit" width="100" height="100"></div>
+                </form>
+            </li></a>
+            <li><a>
+                <form action="/broy/on" method="post">
+                    <p>Désactiver le broyeur<p>
+                    <div id="broyeur"><input type="image" src="C:/Users/Kunta/Desktop/CAEN_PROJECT-master/static/image/019-coffee-grinder-1.png" alt="Submit" width="100" height="100">
+                </form>
+            </li></a>
+            <li><a>
+                <form action="/force1/on" method="post">
+                    <p>Dolce</p>
+                    <div id="force1"><input type="image" src="C:/Users/Kunta/Desktop/CAEN_PROJECT-master/static/image/coffee-seed-1.png" alt="Submit" width="100" height="100">
+                </form>
+            </li></a>
+            <li><a>
+                <form action="/force2/on" method="post">
+                    <p>Mezzi-Forte</p>
+                    <div id="force2"><input type="image" src="C:/Users/Kunta/Desktop/CAEN_PROJECT-master/static/image/006-coffee-beans.png" alt="Submit" width="100" height="100">
+                </form>
+            </li></a>
+            <li><a>
+                <form action="/force3/on" method="post">
+                    <p>Forte</p>
+                    <div id="force3"><input type="image" src="C:/Users/Kunta/Desktop/CAEN_PROJECT-master/static/image/coffee-seed-3.png" alt="Submit" width="100" height="100">
+                </form>
+            </li></a>
+            <li><a>
+                <form action="/tasse/on" method="post">
+                    <p>+ / - de tazze</p>
+                    <div id="tasse"><input type="image" src="C:/Users/Kunta/Desktop/CAEN_PROJECT-master/static/image/009-coffee-mug-2.png" alt="Submit" width="100" height="100">
+                </form>
+            </li></a>
 	<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>-->
-        <script type="text/javascript" src="/static/script/script_etat.js"</script>
-       
-	<footer class="site-footer">
+        <script type="text/javascript" src="C:/Users/Kunta/Desktop/CAEN_PROJECT-master/static/script/script_etat.js"></script>
+
+        <footer class="site-footer">
             <p>Compagnons Du Devoir et de l'électricité</p>
-            <img src="/static/image/Blason.png" height="43" width="46" >
-        </footer>
+            <img src="C:/Users/Kunta/Desktop/CAEN_PROJECT-master/static/image/Blason.png" height="43" width="46" >
+            </footer>
     </body>
 </html>
